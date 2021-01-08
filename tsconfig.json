@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"target": "es2017",
+		"module": "commonjs",
+		"lib": ["ES2020", "ES2020.String"],
+		"strict": true,
+		"skipLibCheck": true,
+		"skipDefaultLibCheck": true,
+		"baseUrl": "src"
+	}
+}
