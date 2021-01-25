@@ -1,3 +1,5 @@
+import { getValues } from "./helpers/get-values";
+
 export enum CommentTypeEnum {
 	ARTICLE = "ARTICLE",
 	COURSE = "COURSE",
@@ -8,3 +10,5 @@ export enum CommentTypeEnum {
 	BOOK_PAGE = "BOOK_PAGE",
 	QUESTION = "QUESTION",
 }
+
+export const CommentTypeValues = () => getValues(CommentTypeEnum);

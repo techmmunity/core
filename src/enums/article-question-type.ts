@@ -1,3 +1,5 @@
+import { getValues } from "./helpers/get-values";
+
 export enum ArticleQuestionTypeEnum {
 	EXACT_TEXT = "EXACT_TEXT",
 	MULTIPLE_CHOICE = "MULTIPLE_CHOICE",
@@ -5,3 +7,6 @@ export enum ArticleQuestionTypeEnum {
 	FILL_IN_THE_BLANK = "FILL_IN_THE_BLANK",
 	MATCHING = "MATCHING",
 }
+
+export const ArticleQuestionTypeValues = () =>
+	getValues(ArticleQuestionTypeEnum);

@@ -1,3 +1,5 @@
+import { getValues } from "./helpers/get-values";
+
 export enum HeadlineEnum {
 	CTO = "CTO",
 	TECH_MANAGER = "TECH_MANAGER",
@@ -13,3 +15,5 @@ export enum HeadlineEnum {
 	RECRUITER = "RECRUITER",
 	SOCIAL_MEDIA = "SOCIAL_MEDIA",
 }
+
+export const HeadlineValues = () => getValues(HeadlineEnum);
