@@ -24,7 +24,7 @@
 		"@typescript-eslint/explicit-function-return-type": 0,
 		"@typescript-eslint/explicit-module-boundary-types": "off",
 		"@typescript-eslint/explicit-member-accessibility": ["error"],
-		"@typescript-eslint/no-explicit-any": 0,
+		"@typescript-eslint/no-explicit-any": ["error"],
 		"no-case-declarations": 0,
 		"accessor-pairs": ["warn", { "setWithoutGet": false }],
 		"@typescript-eslint/no-use-before-define": [
@@ -37,40 +37,9 @@
 		"no-prototype-builtins": "off",
 		"no-restricted-syntax": "off",
 		"max-classes-per-file": "off",
-		"@typescript-eslint/naming-convention": [
-			"error",
-			{
-				"selector": "interface",
-				"format": ["PascalCase"],
-				"custom": {
-					"regex": "^I[A-Z]",
-					"match": true
-				}
-			}
-		],
 		"no-underscore-dangle": "off",
 		"@typescript-eslint/camelcase": "off",
 		"prettier/prettier": "error",
-		"class-methods-use-this": "off",
-		"import-helpers/order-imports": [
-			"warn",
-			{
-				"newlinesBetween": "always",
-				"groups": [
-					"module",
-					["parent", "sibling", "index"],
-					"/event-handlers/",
-					"/auth/",
-					"/services/",
-					"/utils/",
-					"/db/",
-					"/enums/",
-					"/config/",
-					"/assets/",
-					"/types/"
-				],
-				"alphabetize": { "order": "asc", "ignoreCase": true }
-			}
-		]
+		"class-methods-use-this": "off"
 	}
 }
