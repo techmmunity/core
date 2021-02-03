@@ -1,4 +1,4 @@
-import { StrategyEnum } from "core/enums/strategy";
+import { PermissionsEnum } from "core/enums/permissions";
 
 export type DecodedToken = {
 	id: string;
@@ -7,5 +7,5 @@ export type DecodedToken = {
 	githubUserId?: string;
 	linkedinUserId?: string;
 	username: string;
-	permissions: Array<StrategyEnum>;
+	permissions: Array<PermissionsEnum>;
 };
