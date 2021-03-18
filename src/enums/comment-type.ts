@@ -11,4 +11,4 @@ export enum CommentTypeEnum {
 	QUESTION = "QUESTION",
 }
 
-export const CommentTypeValues = () => getValues(CommentTypeEnum);
+export const CommentTypeValues = () => getValues<CommentTypeEnum>(CommentTypeEnum);

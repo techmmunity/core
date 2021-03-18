@@ -56,4 +56,4 @@ export const isLibraryInterest = (interest?: InterestEnum) => {
 	}
 }
 
-export const InterestValues = () => getValues(InterestEnum);
+export const InterestValues = () => getValues<InterestEnum>(InterestEnum);

@@ -8,4 +8,4 @@ export enum RarityEnum {
 	EVENT = "EVENT",
 }
 
-export const RarityValues = () => getValues(RarityEnum);
+export const RarityValues = () => getValues<RarityEnum>(RarityEnum);

@@ -9,4 +9,4 @@ export enum ArticleQuestionTypeEnum {
 }
 
 export const ArticleQuestionTypeValues = () =>
-	getValues(ArticleQuestionTypeEnum);
+	getValues<ArticleQuestionTypeEnum>(ArticleQuestionTypeEnum);

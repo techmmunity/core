@@ -4,4 +4,4 @@ export enum SeeLaterEnum {
 	ARTICLE = "ARTICLE",
 }
 
-export const SeeLaterValues = () => getValues(SeeLaterEnum);
+export const SeeLaterValues = () => getValues<SeeLaterEnum>(SeeLaterEnum);

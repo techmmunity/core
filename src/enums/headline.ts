@@ -72,4 +72,4 @@ export const isEntrepreneurHeadline = (headline?: HeadlineEnum) => {
 	}
 }
 
-export const HeadlineValues = () => getValues(HeadlineEnum);
+export const HeadlineValues = () => getValues<HeadlineEnum>(HeadlineEnum);

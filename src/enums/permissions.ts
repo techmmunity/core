@@ -83,4 +83,4 @@ export enum PermissionsEnum {
 	"mentor.remove" = "mentor.remove",
 }
 
-export const PermissionsValues = () => getValues(PermissionsEnum);
+export const PermissionsValues = () => getValues<PermissionsEnum>(PermissionsEnum);

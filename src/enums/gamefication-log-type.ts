@@ -9,4 +9,4 @@ export enum GameficationLogTypeEnum {
 }
 
 
-export const GameficationLogTypeValues = () => getValues(GameficationLogTypeEnum);
+export const GameficationLogTypeValues = () => getValues<GameficationLogTypeEnum>(GameficationLogTypeEnum);

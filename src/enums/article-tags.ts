@@ -4,4 +4,4 @@ export enum ArticleTagEnum {
 	JAVASCRIPT = "JAVASCRIPT",
 }
 
-export const ArticleTagValues = () => getValues(ArticleTagEnum);
+export const ArticleTagValues = () => getValues<ArticleTagEnum>(ArticleTagEnum);

@@ -5,4 +5,4 @@ export enum LanguageEnum {
 	EN = "EN",
 }
 
-export const LanguageValues = () => getValues(LanguageEnum);
+export const LanguageValues = () => getValues<LanguageEnum>(LanguageEnum);

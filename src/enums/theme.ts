@@ -5,4 +5,4 @@ export enum ThemeEnum {
 	LIGHT = "LIGHT",
 }
 
-export const ThemeValues = () => getValues(ThemeEnum);
+export const ThemeValues = () => getValues<ThemeEnum>(ThemeEnum);
