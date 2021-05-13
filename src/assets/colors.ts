@@ -1,6 +1,4 @@
 export const Colors = {
-	primary: "#2a66f7",
-	darkPrimary: "#0f4cde",
 	background: "#202124",
 	white1000: "#ffffff",
 	black1000: "#000000",
@@ -10,4 +8,11 @@ export const Colors = {
 	gray300: "#a7a7a7",
 	gray500: "#33363a",
 	gray800: "#222325",
+	discord: "#7289DA",
+	github: "#181717",
+	google: "#4285F4",
+	linkedin: "#0A66C2",
+	stackOverFlow: "#F58025",
+	dribbble: "#EA4C89",
+	behance: "#1769FF",
 };
