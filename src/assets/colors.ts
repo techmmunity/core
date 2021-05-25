@@ -7,7 +7,7 @@ export const Colors = {
 	gray200: "#6a6f82",
 	gray300: "#a7a7a7",
 	gray500: "#33363a",
-	gray800: "#222325",
+	gray800: "#2b2c2f",
 	discord: "#7289DA",
 	github: "#181717",
 	google: "#4285F4",
