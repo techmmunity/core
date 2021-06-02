@@ -7,4 +7,6 @@ export enum IntegrationsEnum {
 	LINKEDIN = "LINKEDIN",
 }
 
-export const IntegrationsValues = () => getValues<IntegrationsEnum>(IntegrationsEnum);
+// eslint-disable-next-line @typescript-eslint/naming-convention
+export const IntegrationsValues = () =>
+	getValues<IntegrationsEnum>(IntegrationsEnum);

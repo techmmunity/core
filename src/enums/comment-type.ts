@@ -11,4 +11,6 @@ export enum CommentTypeEnum {
 	QUESTION = "QUESTION",
 }
 
-export const CommentTypeValues = () => getValues<CommentTypeEnum>(CommentTypeEnum);
+// eslint-disable-next-line @typescript-eslint/naming-convention
+export const CommentTypeValues = () =>
+	getValues<CommentTypeEnum>(CommentTypeEnum);

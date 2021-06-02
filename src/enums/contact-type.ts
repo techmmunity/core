@@ -5,4 +5,6 @@ export enum ContactTypeEnum {
 	PHONE_NUMBER = "PHONE_NUMBER",
 }
 
-export const ContactTypeValues = () => getValues<ContactTypeEnum>(ContactTypeEnum);
+// eslint-disable-next-line @typescript-eslint/naming-convention
+export const ContactTypeValues = () =>
+	getValues<ContactTypeEnum>(ContactTypeEnum);
