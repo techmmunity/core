@@ -7,5 +7,6 @@ export enum TemplateFieldTypeEnum {
 	UUID = "UUID",
 }
 
+// eslint-disable-next-line @typescript-eslint/naming-convention
 export const TemplateFieldTypeValues = () =>
 	getValues<TemplateFieldTypeEnum>(TemplateFieldTypeEnum);

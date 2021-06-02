@@ -8,4 +8,5 @@ export enum RarityEnum {
 	EVENT = "EVENT",
 }
 
+// eslint-disable-next-line @typescript-eslint/naming-convention
 export const RarityValues = () => getValues<RarityEnum>(RarityEnum);

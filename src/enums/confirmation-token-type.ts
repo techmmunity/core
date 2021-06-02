@@ -6,5 +6,6 @@ export enum ConfirmationTokenTypeEnum {
 	REMOVE_CONTACT = "REMOVE_CONTACT",
 }
 
+// eslint-disable-next-line @typescript-eslint/naming-convention
 export const ConfirmationTokenTypeValues = () =>
 	getValues<ConfirmationTokenTypeEnum>(ConfirmationTokenTypeEnum);
