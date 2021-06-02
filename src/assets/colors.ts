@@ -12,7 +12,7 @@ export const Colors = {
 	github: "#181717",
 	google: "#4285F4",
 	linkedin: "#0A66C2",
-	stackOverFlow: "#F58025",
+	stackOverflow: "#F58025",
 	dribbble: "#EA4C89",
 	behance: "#1769FF",
 };
