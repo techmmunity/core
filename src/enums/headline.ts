@@ -1,6 +1,10 @@
 import { getValues } from "./helpers/get-values";
 
 export enum HeadlineEnum {
+	/**
+	 * Programming
+	 */
+
 	CTO = "CTO",
 	TECH_MANAGER = "TECH_MANAGER",
 	TECH_LEADER = "TECH_LEADER",
@@ -10,20 +14,46 @@ export enum HeadlineEnum {
 	GAME_DEV = "GAME_DEV",
 	QUALITY_ASSURANCE = "QUALITY_ASSURANCE",
 
+	/**
+	 * Graphic Design
+	 */
+
 	ANIMATOR = "ANIMATOR",
-	DESIGNER = "DESIGNER",
+	GRAPHIC_DESIGNER = "GRAPHIC_DESIGNER",
 	ILLUSTRATOR = "ILLUSTRATOR",
 	GAME_DESIGNER = "GAME_DESIGNER",
 	DIGITAL_SCULPTOR = "DIGITAL_SCULPTOR",
 
+	/**
+	 * Sound Design
+	 */
+
+	SOUND_DESIGNER = "SOUND_DESIGNER",
+
+	/**
+	 * Robotic Engineering
+	 */
+
 	ROBOTIC_ENGINEER = "ROBOTIC_ENGINEER",
+
+	/**
+	 * Management
+	 */
 
 	CEO = "CEO",
 	RECRUITER = "RECRUITER",
+	PRODUCT_MANAGER = "PRODUCT_MANAGER",
+	PRODUCT_OWNER = "PRODUCT_OWNER",
+
+	/**
+	 * Marketing
+	 */
+
+	CPO = "CPO",
 	SOCIAL_MEDIA = "SOCIAL_MEDIA",
 }
 
-export const isDeveloperHeadline = (headline?: HeadlineEnum) => {
+export const isProgrammingHeadline = (headline?: HeadlineEnum) => {
 	switch (headline) {
 		case HeadlineEnum.BACK_END_DEV:
 		case HeadlineEnum.CTO:
@@ -39,10 +69,10 @@ export const isDeveloperHeadline = (headline?: HeadlineEnum) => {
 	}
 };
 
-export const isDesignerHeadline = (headline?: HeadlineEnum) => {
+export const isGraphicDesignerHeadline = (headline?: HeadlineEnum) => {
 	switch (headline) {
 		case HeadlineEnum.ANIMATOR:
-		case HeadlineEnum.DESIGNER:
+		case HeadlineEnum.GRAPHIC_DESIGNER:
 		case HeadlineEnum.GAME_DESIGNER:
 		case HeadlineEnum.ILLUSTRATOR:
 		case HeadlineEnum.DIGITAL_SCULPTOR:
@@ -52,7 +82,16 @@ export const isDesignerHeadline = (headline?: HeadlineEnum) => {
 	}
 };
 
-export const isRoboticsHeadline = (headline?: HeadlineEnum) => {
+export const isSoundDesignerHeadline = (headline?: HeadlineEnum) => {
+	switch (headline) {
+		case HeadlineEnum.SOUND_DESIGNER:
+			return true;
+		default:
+			return false;
+	}
+};
+
+export const isRoboticEngineeringHeadline = (headline?: HeadlineEnum) => {
 	switch (headline) {
 		case HeadlineEnum.ROBOTIC_ENGINEER:
 			return true;
@@ -61,10 +100,21 @@ export const isRoboticsHeadline = (headline?: HeadlineEnum) => {
 	}
 };
 
-export const isEntrepreneurHeadline = (headline?: HeadlineEnum) => {
+export const isManagementHeadline = (headline?: HeadlineEnum) => {
 	switch (headline) {
 		case HeadlineEnum.CEO:
 		case HeadlineEnum.RECRUITER:
+		case HeadlineEnum.PRODUCT_OWNER:
+		case HeadlineEnum.PRODUCT_MANAGER:
+			return true;
+		default:
+			return false;
+	}
+};
+
+export const isMarketingHeadline = (headline?: HeadlineEnum) => {
+	switch (headline) {
+		case HeadlineEnum.CPO:
 		case HeadlineEnum.SOCIAL_MEDIA:
 			return true;
 		default:
