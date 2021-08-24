@@ -1,6 +1,13 @@
 export const COLORS = {
 	white: "#FFFFFF",
 	black: "#000000",
+	staff: "#616565",
+	programming: "#01D2CE",
+	graphicDesign: "#FE0077",
+	soundDesign: "#6500EA",
+	roboticEngineering: "#007DEB",
+	management: "#FF9901",
+	marketing: "#F40428",
 	discord: "#7289DA",
 	github: "#181717",
 	google: "#4285F4",
